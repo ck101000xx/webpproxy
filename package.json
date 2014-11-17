@@ -2,14 +2,19 @@
   "name": "webpproxy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "webpproxy": "index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sharp": "^0.7.2",
     "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0"
+  },
+  "scripts": {
+    "prepublish": "coffee -c ."
   }
 }
